@@ -1,0 +1,28 @@
+h1{
+  color: rgb(75, 73, 202);
+}
+
+p{
+  color: rgb(179, 19, 112);
+}
+
+.divPai{
+  background-color: cornflowerblue;
+  height: 100vh;
+  width: 100%;
+  display : flex;
+  align-items: center;
+  justify-content: center
+}
+
+.filho{
+  border-radius: 20px;
+  background-color: rgb(15, 15, 15);
+  width: 300px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
