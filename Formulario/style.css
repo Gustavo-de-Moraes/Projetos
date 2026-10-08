@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    
+}
+
+body{
+    background-color: rgb(43, 226, 202);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.card{
+    background-color: rgb(250, 245, 245);
+    border-radius: 20px;
+    width: 400px;
+    height: 400px;
+    flex-direction:column ;
+    align-items: baseline;
+    justify-content:baseline ;
+
+
+    padding: 30px;
+}
+
+.divpai{
+    background-color: rgb(16, 16, 241);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+button{
+    background-color: chartreuse;
+    padding: 10px;
+    border-radius: 16px;
+    color: blueviolet;
+}
+
+input,textarea,select{
+    background-color: #fffefe;
+    border-radius: 4px;
+    width: 100%;
+    padding: 9px;
+    border: 1px solid #008f11;
+    flex-direction:column ;
+    box-sizing: border-box;
+    font-family: Arial;
+    
+}
+
+input:focus, textarea:focus,select:focus{
+    border-color: #f58220;
+    box-shadow: 0 0 12px rgba(245,130,32,.45);
+    outline: none;
+}
+
+
+
+   
+
+
+
+
