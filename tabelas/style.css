@@ -1,0 +1,56 @@
+/*
+body{ 
+    background-color: blueviolet;
+    justify-content: center ;
+    align-items: center;
+    display:flex ;
+    
+}
+
+h1{
+    color:blue;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+*/
+/*
+tbody tr:nth-child(even){
+    background: rgba(0, 255, 65,.08);
+    font-size: 20px;
+}
+
+tbody tr:hover{
+    background: rgba(245,130,32,.15);
+    font-size:20px;
+}
+*/
+
+thead{
+    font-size: 50px;
+    color: deeppink;
+    
+}
+
+tbody{
+    font-size: 50px;
+
+
+}
+
+table{
+    margin-left: 0;
+    margin-right: auto;
+    border-collapse:collapse
+}
+
+td{
+  padding-left:  0;
+  text-align: left ;
+  
+}
+th{
+    text-align: left;
+    padding-left: 0;
+}

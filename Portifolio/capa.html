@@ -2,44 +2,96 @@
 <html> 
   <head>
     <meta charset="utf- 8">
-    <title>Portfolio</title>
-
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+    <title>Portfólio</title>
     <link rel="stylesheet" href="detalhes.css">
   </head>
 
 <body>
-  
-  <header>
-    <h1 class="inicio">Sobre Mim </h1>
-    <nav>
-      
-      <a href=" ">sobre mim</a>
-      <a href=" ">skils</a>
-      <a href=" ">Projetos</a>
-      <a href=" ">experiencia</a>
-      <a href=" ">contato</a>
+   <!--Parte de navegação do portifolio-->
+   <nav class ="navegacao">
+     <ul class="menu">
+        <li>
+          <a href="#inicio" class="menu-link">Inicío</a>
+        </li>
 
-    </nav>
-  </header>
+        <li>
+          <a href="#sobre" class="menu-link">Sobre</a>
+        </li>
 
-  <!--SEÇÃO 1-->
-  <section>
-    <h1>Gustavo de Moraes Azevedo e Silva</h1>
-    <h2>Estudante Engenharia de software e programador</h2>
-  </section>
-  
+        <li>
+          <a href="#projetos" class="menu-link">Projetos</a>
+        </li>
+
+        <li>
+          <a href="contatos" class="menu-link">Contatos</a>
+        </li>
+
+     </ul>
 
 
-  <!--SEÇÃO 2-->
-  <section class="secao2">
-    <h3>Skills</h3>
-    <div class="imagens">
-      <img src="assets/free-logo-html-5-free-png.webp" alt="HTML">
-      <img src="assets/OIP (3).webp" alt="Python">
-    </div>
-  </section>
+   </nav>
+   
+   <!--Primeira pagina do site-->
+   <main id="inicio" class="cabecalho">
+         <img src="assets/IMG_20260627_154432920_HDR.jpg" alt="Foto do Gustavo" class="Foto-perfil">
+         <h1>Gustavo de Moraes</h1>
+         <p class="ca">Desenvolvedor full stack</p>
+   </main>
+   
+   <!--Segunda  pagina do site-->
+   <section id="sobre" class="secao">
+      <h2 class="sobre-titulo">Sobre Mim</h2>
+      <div class="sobre-caixa">
+        <p class="sobre-paragrafo">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, dolor! Ipsam autem, molestiae neque dolorem eveniet possimus corporis fugit totam distinctio nisi facilis incidunt laudantium eum porro impedit minus iure.
+        </p>
+      </div>
+   </section>
+   
 
-  
+   <!--Terceira parte do portifolio-->
+   <section id="projetos" class="Projetos">
+      <h2 class="projetos-titulos">Meus Projetos</h2>
+      <div class="projetos-caixa">
+
+        <div class="Projetos-card">
+          <img src="assets/Captura de tela 2026-10-26 131330.png" alt="Projetos 1" class="Projetos-imagem">
+          <h3 class="info-projetos">Loja de peças para pc gamer</h3>
+          <p class="paragrafo-projetos">loja interativa e moderna para procura de peças de hadware</p>
+        </div>
+
+         <div class="Projetos-card">
+          <img src="assets/Captura de tela 2026-10-26 130521.png" alt="Projetos 1" class="Projetos-imagem">
+          <h3 class="info-projetos">Formulario basico</h3>
+          <p class="paragrafo-projetos">simples e basico formulario para cadastro de usuarios</p>
+        </div>
+
+
+
+
+      </div>
+
+   </section>
+    
+   <!--Quarta parte do projeto-->
+   <section id="contatos" class="contatos">
+     <h2 class="contatos-titulo">Contatos</h2>
+     <form class="formulario-contato" id="formulario">
+        <div class="Nome-form">
+          <input placeholder="Nome">
+        </div>
+
+        <div class="grupo-form">
+          <textarea placeholder="Digite sua Mensagem"></textarea>
+        </div>
+
+     </form>
+
+
+   </section>
+
+
 </body>
 
 

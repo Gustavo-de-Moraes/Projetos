@@ -1,95 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
 
 body{
-  background-image: url("assets/thumb-1920-919075.jpg");
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-image: linear-gradient(black, rgb(17, 106, 133));
+    /*
+    background-repeat: no-repeat;
+    background-size: cover;
+    */
 }
 
-header{
-  background-color: rgb(39, 3, 243);
-  backdrop-filter: blur(30px);
-  background: transparent;
-  padding: 20px;
-  justify-content: end;
-  align-items: end;
-  display: flex;
-  margin: 1%;
-  border-radius: 20px;
-  
-  
+.navegacao{
+    position: fixed;
+    top:0;
+    background: rgb(161, 152, 152) ;
+    width: 100%;
+    z-index: 100;
+    padding: 1.5rem;
+}
 
-  .inicio{
-    color: rgb(22, 6, 240);
-    width: 860px;
-
-
-  }
-  
-  nav{
-    background-color: antiquewhite;
-    background: transparent;
-    border-radius: 20px;
-    padding: 16px 20px;
+.menu{
     display: flex;
-    gap: 10px;
-    height: 40px;
-    width: 360px;
-    backdrop-filter: blur(200px);
-    
-    
-  }
+    list-style: none;
+    gap:3rem;
+
 }
 
-section{
-  color: blue;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  display: flex;
-  padding: 20px;
-  background: transparent;
-  backdrop-filter: blur(30px);
-  border-radius: 20px;
-  margin: 1%;
-  font-size: 30px;
- 
+.menu-link{
+    text-decoration: none;
+    color: aliceblue;
+    font-weight: 500;
+    position: relative;
+    padding:  12px 22px;
+    transition: background 180ms ease, transform 180ms ease;
+    border-radius: 999px;
+}
 
-  h2{
-    color: aquamarine;
+.menu-link:hover,
+.menu-link:focus-visible {
+    background: #2c51e7;
+    transform: translateY(-2px);
+    }
+
+
+
+.cabecalho{
+    min-height: 100vh;
+    display: flex;
     justify-content: center;
     align-items: center;
-    
-  }
+    flex-direction: column;
     
 }
 
-.secao2{
-  background-color: rgb(21, 228, 6);
-  color: aqua;
-  
 
+.Foto-perfil{
+    width: 350px;
+    height: 350px;
+    box-shadow: blue ;
+    border-radius: 50%;
+    border: 4px solid #020d3a;
+    box-shadow: 0 0 20px rgba(79,70,229);
+}
 
-  
-  h3{
-    width: 98%;
-    text-align: left;
-  }
-
-  .imagens {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
+ 
+h1{
+    font-size: 3.5rem;
+    color: #2c51e7;
+    font-weight: bold;
+    margin: 20px;
+    flex-direction: row;
     
-    
-  }
-  
-  .imagens img {
-    width: 27%; 
-    height: auto; 
-    border-radius:15px;
-    aspect-ratio: 3/2;
-    object-fit: contain;
-  }
-  
+
+}
+
+.ca{
+    font-size: 30px;
+    color:#060b1f;
+    max-width: 550px;
 }
 
 
+
+.secao{
+    padding: 6rem 2rem;
+
+}
+
+.sobre-titulo{
+   font-size: 2rem;
+   color: aliceblue;
+   text-align: center;
+   flex-direction: column;
+   margin-bottom: 20px;
+}
+
+
+.sobre-caixa{
+    padding: 2rem;
+    max-width: 600px;
+    margin: 0 auto;
+    border-radius: 16px;
+    border: 1px solid #060b1f;
+    backdrop-filter: blur(10px);
+    background: rgba(255,255,255,0.05);
+
+
+}
+
+.sobre-paragrafo{
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+
+}
+
+
+/*efeitos da terceira parte*/
+.Projetos{
+   padding: 6rem 2rem;
+}
+.projetos-titulos{
+   text-align: center;
+   font-size: 2.5rem ;
+   margin-bottom: 30px;
+}
+.projetos-caixa{
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+   gap:2rem;
+   max-width: 1220px;
+   margin: 0 auto;
+
+}
+
+.Projetos-imagem{
+    height: 200px;
+    width: 100%;
+    object-fit: cover ;
+}
+
+.Projetos-Card{
+    background: rgba(255,255,255,0.05);
+    border-radius: 16px;
+    border: 1px solid #060b1f;
+    backdrop-filter: blur(5px);
+    overflow: hidden;
+  
+}
