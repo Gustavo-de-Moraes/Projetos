@@ -1,0 +1,89 @@
+*{
+   margin: 0;   
+   padding: 0;  
+   box-sizing: border-box;
+   font-family: 'Poppins', sans-serif; 
+   list-style: none;     
+}
+
+body{
+   background-color: #2c2929;  
+   color: #f7f2f2;  
+   line-height: 1.6;  
+   font-size: 16px; 
+}   
+
+
+header {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 80vw;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+
+    align-items: center;
+    gap: 30px;
+
+    padding: 15px;
+}
+
+/* MENU */
+
+header{
+    background-color: #d3d3d3; 
+    border-radius: 10px;
+    width: 100%; 
+    z-index: 1000;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
+    list-style: none;
+}
+
+/* LINKS */
+header nav a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    transition: background 180ms ease, transform 180ms ease;
+    border-radius: 5px;
+    background-color: rgb(128, 130, 133);
+    padding: 12px 22px;
+}
+
+
+nav a:hover{
+    background: #d1d4e2;
+    color: #fff;
+    font-size: 20px;
+}
+
+
+/* LOGIN E BUSCA */
+.acoes {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+
+/* PESQUISA */
+.busca {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.busca input {
+    width: 150px;
+    padding: 10px;
+    border-radius: 20px;
+}

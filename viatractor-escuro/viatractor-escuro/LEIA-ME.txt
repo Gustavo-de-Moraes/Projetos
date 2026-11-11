@@ -1,0 +1,16 @@
+SITE VIATRACTOR (versão escura: amarelo e asfalto em tema escuro) - uma pasta por linguagem
+
+  index.html   -> página principal (na raiz), usa as pastas css/, javascript/ e php/
+  css/         style.css   -> todo o visual
+  javascript/  main.js     -> menu do celular, fotos ampliadas, formulário, "aberto agora"
+  php/         index.php, contato.php e includes/ -> mesma página em PHP + envio do formulário
+
+IMPORTANTE
+  - Extraia o zip inteiro e abra a pasta extraída (não abra de dentro do zip).
+  - O Live Server do VS Code não executa PHP: o site aparece, mas o formulário só envia
+    em servidor com PHP 8+ (ou no computador com:  php -S localhost:8000  dentro da pasta).
+
+O QUE EDITAR
+  php/includes/data.php  -> telefones, WhatsApp, e-mail, textos e lista de produtos.
+  Confirme CONTACT_TO: no site antigo o e-mail aparecia como viatracor@... (sem o "t").
+  As fotos ainda carregam do site atual; baixe-as antes de desligá-lo e troque IMG_BASE.
