@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/style.css">   
+    <link rel="stylesheet" href="css/style.css">   
     <title>Nike</title>
+    <script src="js/iteracao-imagem.js" defer></script>
 </head>
 <body>
     <!-- ABA DE LINKS-->
@@ -38,18 +39,32 @@
 
 
     <!--ABA DE INICIO-->
-    <section id ="#">
-       
-        <h1>Bem-vindo à Nike</h1>
-        <p>Explore nossa coleção de produtos esportivos e encontre o que você precisa para alcançar seu melhor desempenho.</p>
-        <div class="imagem-destaque">
-            <img src="img/06236351A5.avif" alt="Imagem de destaque da Nike" width="600">
-            <img src="img/eccc7b83-8080-46dd-bf4f-421df29faed8___2d0f3117d59347883972cf82b26c8349.webp" alt="Imagem de destaque da Nike" width="600">   
-        </div>      
+    <section class="wrapper" id ="#">
+        <div class="comentario-inicio">
+            <p>Explore nossa coleção de produtos esportivos e encontre o que você precisa para alcançar seu melhor desempenho.</p>
+        </div>
+
+        <i class="fa-solid fa-arrow-left button" id="prev"></i>
+        <div class="imagem-conteiner">
+            <div class ="carousel">
+                   <img src="img/06236351A5.avif" alt="" />
+                   <img src="img/eccc7b83-8080-46dd-bf4f-421df29faed8___2d0f3117d59347883972cf82b26c8349.webp" alt="" />
+            </div>
+        </div>
+        <i class="fa-solid fa-arrow-right button" id="next"></i>
+        
+           
+        
+        
     </section>
 
-    <!--SEÇÃO 1-->
-    <section id="masculino">
+
+
+
+
+
+    <!--SEÇÃO 1-->      
+    <section class="secao1" id="masculino">
         <h2>Masculino</h2>
         <p>Descubra coleções pensadas para conforto, estilo e performance em cada detalhe.</p>
         
@@ -134,7 +149,7 @@
     </section>
 
     <!--SEÇÃO 2-->
-    <section id="feminino">
+    <section class="secao2" id="feminino">
         <h2>Feminino</h2>
         <p>Explore looks modernos e peças versáteis para o dia a dia com personalidade.</p>
         <a href="" target="_blank">Adicionar ao Carrinho</a>
@@ -218,7 +233,7 @@
 
 
     <!--SEÇÃO 3-->
-    <section id="calcados">
+    <section class="secao3" id="calcados">
         <h2>Calçados</h2>
         <p>Encontre os melhores modelos para corrida, lifestyle e uso casual com tecnologia Nike.</p>
 
@@ -297,8 +312,12 @@
         
     </section>
 
-    
-    
+
+
+
+
+
+      
     
 </body>
 </html>

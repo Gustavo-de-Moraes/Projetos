@@ -10,16 +10,12 @@ body{
    background-color: #2c2929;  
    color: #f7f2f2;  
    line-height: 1.6;  
-   font-size: 16px; 
-}   
-
-.inicio{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    text-align: center;
+   font-size: 16px;
+   /* 
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   */
 }   
 
 
@@ -42,10 +38,12 @@ header {
 /* MENU */
 
 header{
-    /*background-color: #d3d3d3; */ 
+    /* background-color: #e60e0e; */
+    font-size: 12px;
     border-radius: 10px;
     width: 100%; 
     z-index: 900;
+    padding: 3px 0;
 }
 
 header nav ul {
@@ -53,26 +51,27 @@ header nav ul {
     justify-content: center;
     align-items: center;
     gap: 30px;
-
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 /* LINKS */
 header nav a {
     text-decoration: none;
     color: black;
-    font-size: 18px;
+    font-size: 15px;
     transition: background 180ms ease, transform 180ms ease;
     border-radius: 5px;
     background-color: rgb(128, 130, 133);
-    padding: 12px 22px;
+    padding: 12px 20px;
 }
 
 
 nav a:hover{
     background: #d1d4e2;
     color: #fff;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 
@@ -96,3 +95,94 @@ nav a:hover{
     padding: 10px;
     border-radius: 20px;
 }
+
+/* PRIMEIRA PAGINA DO PROJETO */
+
+
+.wrapper{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    gap:30px;
+}
+
+.wrapper i.button{
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    height: 36px;
+    width: 36px;
+    background-color: #df1010;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 36px;
+    color: #fff;
+    font-size: 15px;
+    transition: all 0.3s ease;
+    z-index: 1000;
+    cursor: pointer;
+}
+
+.comentario-inicio {
+    max-width: 300px;
+    font-size: 40px;
+}
+
+
+i.button{
+    transition: scaleX(0.94) translateY(-50%);
+}
+
+i#prev{
+    left: 25px;
+   
+}
+
+i#next{
+    right: 25px;
+   
+}
+
+
+.imagem-conteiner {
+    height: 400px;
+    max-width: 600px;
+    width: 90%;
+    transition: all 0.4s ease;
+    overflow: hidden;
+    
+    
+}
+
+.imagem-conteiner .carousel {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    gap: 15px;
+    transition:all 0.4s ease;
+}
+
+.carousel img {
+    height: 100%;
+    width: 250px;
+    border: 10px solid #fff;
+    border-radius: 18px;
+    object-fit: cover;
+    flex-shrink: 0;
+   
+   
+}
+
+
+/*
+.secao1, .secao2, .secao3 {
+    padding: 50px 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+*/
