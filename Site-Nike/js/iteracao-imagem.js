@@ -1,3 +1,5 @@
+
+/*
 const wrapper = document.querySelector('.wrapper'),
     carousel = document.querySelector('.carousel'),
     imagem = document.querySelectorAll('.img'),
@@ -41,3 +43,62 @@ buttons.forEach((button) => button.addEventListener('click', updateClick));
 wrapper.addEventListener('mouseover', () => clearInterval(intervalId));
 
 wrapper.addEventListener('mouseleave', autoSlide);
+*/
+
+
+const carousel = document.querySelector(".carousel");
+const imagens = document.querySelectorAll(".carousel img");
+
+const prev = document.getElementById("prev");
+const next = document.getElementById("next");
+
+let indiceAtual = 0;
+
+function atualizarCarrossel() {
+
+    const container = document.querySelector(".imagem-conteiner");
+
+    const larguraContainer = container.clientWidth;
+    const larguraImagem = imagens[0].offsetWidth;
+
+    const estilo = getComputedStyle(carousel);
+    const espacamento = parseFloat(estilo.gap) || 0;
+
+    const deslocamento =
+        (larguraImagem + espacamento) * indiceAtual
+        - (larguraContainer - larguraImagem) / 2;
+
+    carousel.style.transform = `translateX(-${deslocamento}px)`;
+}
+
+// Avançar imagem
+next.addEventListener("click", () => {
+
+    indiceAtual++;
+
+    if (indiceAtual >= imagens.length) {
+        indiceAtual = 0;
+    }
+
+    atualizarCarrossel();
+
+});
+
+// Voltar imagem
+prev.addEventListener("click", () => {
+
+    indiceAtual--;
+
+    if (indiceAtual < 0) {
+        indiceAtual = imagens.length - 1;
+    }
+
+    atualizarCarrossel();
+
+});
+
+// Centralizar primeira imagem ao carregar
+window.addEventListener("load", atualizarCarrossel);
+
+window.addEventListener("resize", atualizarCarrossel);
+

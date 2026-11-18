@@ -3,38 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">   
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">   
     <title>Nike</title>
     <script src="js/iteracao-imagem.js" defer></script>
 </head>
 <body>
     <!-- ABA DE LINKS-->
     
+  
   <header>
-    <a href="#">
-      <img src="img/icons8-nike-50.png" alt="Logotipo da Nike" width="100" a href="#">
-    </a>
-      <nav>
-        <ul>
-            <li><a href="#masculino">Masculino</a></li>
-            <li><a href="#feminino">Feminino</a></li>
-            <li><a href="#calcados">Calçados</a></li>
-            
-           
-        </ul>
-      </nav>
 
+       <nav>
+            <div class="navbar">
+                <div class="logo">
+                   <a href="#">
+                    <img width="94" height="94" src="img/icons8-nike-50.png" alt="category" a href="#"></a>
+                   </a>
+                    
+                </div>
 
-    <div class="acoes">
-      <a href="login.html">Login</a>
+                <ul class ="menu">
+                    <li><a href="#masculino">Masculino</a></li>
+                    <li><a href="#feminino">Feminino</a></li>
+                    <li><a href="#calcados">Calçados</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+               <div class="navbar">
 
-      <div class =busca> 
-            <input type="email" id="email" name="email" placeholder="Buscar">     
-            <img width="30" height="30" src="https://img.icons8.com/ios-filled/50/search--v1.png" alt="Ícone de busca"/>
-            <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/shopping-cart--v1.png" alt="Ícone do carrinho de compras"/>
-      </div>
-    </div>
-           
+                  <div class="search-box">
+                        <input type="text" placeholder="Search here...">
+
+                        <a href="#">
+                              <i class="fas fa-search"></i>
+                        </a>
+                  </div>
+
+                  <div class="icons">
+                        <a href="login.html">
+                              <i class="fas fa-user"></i>
+                        </a>
+
+                  <a href="#">
+                        <i class="fas fa-shopping-cart"></i>
+                  </a>
+                  </div>
+
+              </div>
+                  
+               
+                
+            </div>
+    
+        </nav>
+
   </header>
 
 
@@ -44,14 +67,16 @@
             <p>Explore nossa coleção de produtos esportivos e encontre o que você precisa para alcançar seu melhor desempenho.</p>
         </div>
 
-        <i class="fa-solid fa-arrow-left button" id="prev"></i>
+        
         <div class="imagem-conteiner">
+            <i class="fa-solid fa-arrow-left button" id="prev"></i>
             <div class ="carousel">
                    <img src="img/06236351A5.avif" alt="" />
                    <img src="img/eccc7b83-8080-46dd-bf4f-421df29faed8___2d0f3117d59347883972cf82b26c8349.webp" alt="" />
             </div>
+            <i class="fa-solid fa-arrow-right button" id="next"></i>
         </div>
-        <i class="fa-solid fa-arrow-right button" id="next"></i>
+      
         
            
         
@@ -68,6 +93,10 @@
         <h2>Masculino</h2>
         <p>Descubra coleções pensadas para conforto, estilo e performance em cada detalhe.</p>
         
+      <div class ="produtos">
+
+
+        <div class ="produto">
         <a href="" target="_blank">Adicionar ao Carrinho</a>
         <img src="img/174f046c7e975b9021fc1dd1eecbcf3d.jpg" alt="Tênis masculino Nike da imagem 1" width="300">
         <div class="desc">SSD internal/ NVMe M.2/ T500 1tbGen4 </div>
@@ -75,9 +104,11 @@
               <span  class="moeda">R$</span>
                <span class="valor">250</span>
               <span class="centavos">,90</span>
-        </div>o Cruci
+        </div>
         <a href="" target="_blank">Adicionar ao Carrinho</a>
+        </div>
 
+        <div class="produto">
         <img src="img/JD8-9434-010_zoom1.avif" alt="Tênis masculino Nike JD8-9434-010" width="300">
         <div class="desc">SSD interno Crucial/ NVMe M.2/ T500 1tbGen4 </div>
         <div class="preco">
@@ -86,9 +117,10 @@
               <span class="centavos">,90</span>
         </div>
         <a href="" target="_blank">Adicionar ao Carrinho</a>
+        </div>
 
 
-
+        <div class="produto">
         <img src="img/013350IDA5.avif" alt="Tênis masculino Nike 013350IDA5" width="300">
         <div class="desc">SSD interno Crucial/ NVMe M.2/ T500 1tbGen4 </div>
         <div class="preco">
@@ -97,8 +129,10 @@
               <span class="centavos">,90</span>
         </div>
         <a href="" target="_blank">Adicionar ao Carrinho</a>
+        </div>
 
 
+        <div class="produto">
         <img src="img/OIP (2).webp" alt="Tênis masculino Nike da imagem 4" width="300">
         <div class="desc">SSD interno Crucial/ NVMe M.2/ T500 1tbGen4 </div>
         <div class="preco">
@@ -107,7 +141,10 @@
               <span class="centavos">,90</span>
         </div>
         <a href="" target="_blank">Adicionar ao Carrinho</a>
+        </div>
         
+
+        <div class="produto">
         <img src="img/OIP (3).webp" alt="Tênis masculino Nike da imagem 5" width="300">
         <div class="desc">SSD interno Crucial/ NVMe M.2/ T500 1tbGen4 </div>
         <div class="preco">
@@ -116,7 +153,9 @@
               <span class="centavos">,90</span>
         </div>
         <a href="" target="_blank">Adicionar ao Carrinho</a>
+        </div>
 
+        <div class="produto">
         <img src="img/c9e6b1e2b91e28846bde63e4919a942c.jpg" alt="Tênis masculino Nike da imagem 6" width="300">
         <div class="desc">SSD interno Crucial/ NVMe M.2/ T500 1tbGen4 </div>
         <div class="preco">
@@ -125,7 +164,9 @@
               <span class="centavos">,90</span>
         </div> 
         <a href="" target="_blank">Adicionar ao Carrinho</a>
-
+        </div>
+        
+        <div class="produto">
         <img src="img/695167.webp" alt="Tênis masculino Nike modelo 695167" width="300"> 
         <div class="desc">SSD interno Crucial/ NVMe M.2/ T500 1tbGen4 </div>
         <div class="preco">
@@ -134,17 +175,19 @@
               <span class="centavos">,90</span>
         </div>
         <a href="" target="_blank">Adicionar ao Carrinho</a>
+        </div>
 
-
+        <div class="produto">
         <img src="img/OIP (4).webp" alt="Tênis masculino Nike da imagem 8" width="300">
         <div class="desc">SSD interno Crucial/ NVMe M.2/ T500 1tbGen4 </div>
         <div class="preco">
               <span  class="moeda">R$</span>
-               <span class="valor">250</span>
+              <span class="valor">250</span>
               <span class="centavos">,90</span>
         </div>
         <a href="" target="_blank">Adicionar ao Carrinho</a>
-
+        </div>
+      </div>
 
     </section>
 
