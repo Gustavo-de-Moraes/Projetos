@@ -179,4 +179,324 @@ nav .navbar{
     box-shadow: 8px 8px 0px #7928ca;
 }
 
+/*ESTILIZAÇÃO DA PAGINA PORJETOS*/
+
+h2{
+    display:flex;
+    justify-content:center;
+    color: #fff;
+    font-family: 'fonte-gta';
+    font-size: 60px;
+    -webkit-text-stroke: 2px black;
+    text-shadow: 3px 3px 0 black;
+
+}
+
+h2 {
+    font-size: 42px;
+    color: #00aaff;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.card-wrapper{
+    max-width: 1100px;
+    margin: 0 60px 35px;
+    padding: 50px 50px;
+    overflow: hidden;
+}
+
+.card-list .card-item{
+    list-style: none;
+}
+
+
+.card-list .card-item .card-link{
+    user-select: none;
+    display:block;
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    text-decoration: none;
+    border: 2px solid transparent;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.05);
+    transition: 0.4s ease;
+}
+
+.card-list .card-item .card-link:active{
+    cursor: grabbing;
+
+}
+
+.card-list .card-item .card-link:hover{
+    border-color:#5372F0;
+
+
+}
+
+
+.card-list .card-link .card-image{
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.card-list .card-link .badge{
+    color: #fff;
+    padding: 8px 16px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    margin: 16px 0 18px;
+    background: #19a5e6;
+    width: fit-content;
+    border-radius: 50px;
+}
+
+.card-list .card-link .badge.designer{
+   color: #fff;
+   background: #5372f0;
+}
+
+.card-list .card-link .badge.marketer{
+   color: #fff;
+   background:#fc0202;
+}
+
+.card-list .card-link .badge.gamer{
+   color: #fff;
+   background:#faa303;
+}
+
+.card-list .card-link .badge.editor{
+   color: #fff;
+   background:#70f702;
+}
+
+.card-list .card-link .badge.designer{
+   color: #fff;
+   background:#f50ff5;
+}
+
+
+
+
+
+
+
+
+.card-list .card-link .card-title{
+    font-size: 1.19rem;
+    color:#fff;
+    font-weight: 600;
+}
+
+.card-list .card-link .card-button{
+    height: 35px;
+    width: 35px;
+    color: #5372f0;
+    border-radius: 50%;
+    margin: 30px 0 5px;
+    background: none;
+    cursor: pointer;
+    border: 2px solid #5372F0;
+    transform: rotate(-45deg);
+    transition: 0.4s ease;
+}
+
+.card-list .card-link:hover .card-button{
+    color:#fff;
+    background: #5372F0;
+}
+
+/*ESTILIZAÇÃO DA PAGINA SOBRE MIM*/
+
+/* Seção Sobre Mim */
+.sobre {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 20px;
+}
+
+/* Título */
+.sobre-titulo {
+    font-size: 42px;
+    color: #00aaff;
+    margin-bottom: 35px;
+    text-align: center;
+    position: relative;
+}
+
+/* Linha abaixo do título */
+
+
+/* Caixa de conteúdo */
+.sobre-caixa {
+    max-width: 750px;
+    width: 100%;
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(0, 170, 255, 0.3);
+    border-radius: 20px;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.4);
+    transition: 0.4s ease;
+}
+
+/* Efeito ao passar o mouse */
+.sobre-caixa:hover {
+    transform: translateY(-8px);
+    border-color: #00aaff;
+    box-shadow: 0 15px 40px rgba(0, 170, 255, 0.2);
+}
+
+/* Parágrafo */
+.sobre-paragrafo {
+    font-size: 18px;
+    line-height: 1.9;
+    color: #d0d8e5;
+    text-align: justify;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    .sobre-titulo {
+        font-size: 32px;
+    }
+
+    .sobre-caixa {
+        padding: 25px;
+    }
+
+    .sobre-paragrafo {
+        font-size: 16px;
+    }
+}
+
+/* ESTILIZAÇÃO DA PAGINA CONTATO*/  
+
+
+/* Seção de contato */
+.contato {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #080b16, #101b32);
+}
+
+/* Título */
+.contato-titulo {
+    font-size: 42px;
+    color: #00aaff;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* Descrição */
+.contato-descricao {
+    color: #d0d8e5;
+    font-size: 17px;
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+/* Caixa do formulário */
+.contato-caixa {
+    width: 100%;
+    max-width: 600px;
+    padding: 35px;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(0, 170, 255, 0.3);
+    border-radius: 20px;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.4);
+}
+
+/* Campos */
+.campo {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+/* Labels */
+.campo label {
+    color: #00aaff;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+/* Inputs e textarea */
+.campo input,
+.campo textarea {
+    width: 100%;
+    padding: 14px;
+    background: #0c1528;
+    border: 1px solid #263b59;
+    border-radius: 10px;
+    outline: none;
+    color: white;
+    font-size: 15px;
+    font-family: inherit;
+    transition: 0.3s;
+}
+
+/* Placeholder */
+.campo input::placeholder,
+.campo textarea::placeholder {
+    color: #8295ad;
+}
+
+/* Efeito ao clicar */
+.campo input:focus,
+.campo textarea:focus {
+    border-color: #00aaff;
+    box-shadow: 0 0 10px rgba(0, 170, 255, 0.2);
+}
+
+/* Área da mensagem */
+.campo textarea {
+    resize: vertical;
+}
+
+/* Botão */
+.botao-contato {
+    width: 100%;
+    padding: 15px;
+    background: #00aaff;
+    color: #080b16;
+    border: none;
+    border-radius: 10px;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Hover do botão */
+.botao-contato:hover {
+    background: #0088cc;
+    color: white;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 20px rgba(0, 170, 255, 0.3);
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    .contato-titulo {
+        font-size: 32px;
+    }
+
+    .contato-caixa {
+        padding: 22px;
+    }
+}
+
+
 
